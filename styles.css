@@ -1,0 +1,103 @@
+html {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  background-image: url("./background-image.jpg");
+  background-size: cover;
+}
+
+.container-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.intro-text {
+  width: 300px;
+  flex: 1 1 auto;
+  font-size: 50px;
+  color: white;
+ /*  -webkit-text-stroke: 5px black; */
+  text-shadow: 2px 2px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 450px;
+}
+
+.range-scale {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.range-scale input {
+  position: absolute;
+  margin: 10px 0;
+  width: 250px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+.range-scale span {
+  font-size: 30px;
+  position: absolute;
+}
+
+.drawing-container {
+  flex: 2 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 25px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  height: 450px;
+  width: 400px;
+  display: grid;
+  background-color: white;
+  box-shadow: 2px 2px 4px 2px black;
+  /* we also set gridTemplateColumns and rows here which we are doing dynamically in index.js*/
+}
+
+.emptySquare {
+  background-color: white;
+  /* border: 1px solid black; */
+}
+
+.brush-selection {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.brush-buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  flex: 1;
+  height: 50px;
+}
+
+.brush-buttons button {
+  background-image: linear-gradient(to right, #6f0b78 , #542d96, #b299de); 
+  color: aliceblue;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.brush-buttons button:hover {
+  box-shadow: 3px 3px 3px 3px #d8cced;
+  border: 2px solid white;
+}
